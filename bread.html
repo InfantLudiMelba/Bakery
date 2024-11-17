@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bakery.css">
+</head>
+<style>
+    .btn:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgb(0, 0, 0,0.15);
+        transition:all 0.3s ease-in-out;
+    }
+    
+</style>
+<body style="background-color:rgb(204, 171, 117);" class="m-0" >
+<!-- jQuery (required for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS bundle (includes Popper.js for dropdowns) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <header   style="background-color: rgb(204, 171, 117); font-family: Georgia, serif;">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 d-flex justify-content-center align-items-center" >
+                    <img src="bakerylogob.png" alt="" width="50%" height="50%">
+                </div>
+                <div class="col-6 p-3 d-flex justify-content-start align-items-center">
+                    <b><h1 class="fs-1 " style="color:#562B09;">Melbu Bakery</h1></b>
+                    <h5 style="color:#562B09;">“Because quality is our main ingredient.”</h5>
+                </div>
+                <div class="col-3">
+                    <img src="logologo.png"  class="pe-0" alt="logo">
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark navbar-expand-lg" style="background-color:#562B09;">
+            <div class="container">
+                <a class="navbar-brand " href="#">Menu</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#list" type="button"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="list">
+                <ul class="navbar-nav" style="margin-left: auto;" >
+                    <li class="nav-item"><a class="nav-link" href="website for bakery.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loginpage.html" target="_blank">Login</a></li>
+                    <li class="nav-item"><div class="dropdown">
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" id="lli" aria-haspopup="true" aria-expanded="false">
+                        Catagory</a>
+                           <div class="dropdown-menu" aria-labelledby="lli">
+                            <a class="dropdown-item " href="cake.html">Cake</a>
+                            <a class="dropdown-item" href="bread.html">Bread</a>
+                            <a class="dropdown-item" href="pie.html">Pie</a>
+                           </div>
+                        </div></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5 " style="color:black">
+        <div class="row p-4 mb-4" style="background-color:#562B09;">
+            <div class="col-12 col-sm-6  col-lg-3 col-md-4">
+            <div class="card h-100">
+                <div class="col p-1 mb-0">
+                    
+                <img src="wheat bread.jpeg" class="w-100 h-100"  alt="Wheat Bread">
+                </div>
+                <div class="col p-0 m-0">
+                 <div class="card-body mt-0">
+                    <p class="">Wheat bread with Organic ingredients</p>    
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="">150Rs.</h3>
+                        <span class="badge "style="background-color:#562B09;" ><h5>50%off</h5></span>
+                        </div>
+                    
+                 </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6  col-lg-3 col-md-4 ">
+            <div class="card h-100">
+            <div class="col p-1">
+                <img src="dates bread.jpeg" class="w-100 h-100" alt="Dates Bread">
+            </div>
+            <div class="col">
+                <div class="col-body">
+                    <h3>Dates Cake</h3>
+                    <p>Rate:500 per 1kg</p>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="col-12 col-sm-6  col-lg-3 col-md-4">
+                <div class="card h-100">
+                    <div class="col p-1">
+                        <img src="brown bread.jpeg" class="w-100 h-100" alt="Brown bread">
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <h3>Brown Bread</h3>
+                            <p>Rate:300 per 1kg</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-lg-3 col-md-4">
+                <div class="card h-100">
+                    <div class="col p-1">
+                <img src="orange bread.jpeg" class="w-100 h-75" alt="Orange Bread">
+            </div>
+            <div class="col">
+                <div class="card-body"></div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="row mb-4 p-4" style="background-color:#562B09;">
+            <div class="col-12 col-sm-6 col-lg-3 col-md-4">
+            <div class="card h-100">
+                <div class="col p-1">
+                <img src="strawberry bread.jpeg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="card-body"></div>
+            </div>
+            </div>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <div class="col p-1">
+                <img src="lime bread.jpeg" class="h-75 w-100" alt="">
+            </div>
+            <div class="col">
+                <div class="card-body"></div>
+            </div>
+            </div>
+        </div>
+            <div class="col-12 col-lg-3 col-sm-6 col-md-4">
+        <div class="card h-100">
+            <div class="col p-1">
+            <img src="pinapple bread.jpeg" class="w-100 h-75" alt="">
+        </div>
+        <div class="col">
+            <div class="card-body"></div>
+        </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" >
+        <div class="card h-100">
+        <div class="col p-1">
+            <img src="grape bread.jpg" class="w-100 h-75" alt="">
+        </div>
+        <div class="col">
+           <div class="card-body"></div>
+        </div>
+
+        </div>
+        </div>
+    </div>
+        <div class="row mb-4 p-4" style="background-color:#562B09;">
+            <div class="col-12 col-sm-6 col-lg-3 col-md-4">
+            <div class="card h-100">
+                <div class="col p-1">
+                <img src="blueberry bread.jpg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="card-body"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100">
+                <div class="col p-1">
+                <img src="nuts bread.jpg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="card-body"></div>
+            </div>
+            </div></div>
+            <div class="col-12 col-sm-6 col-lg-3 col-md-4">
+            <div class="card h-100">
+                <div class="col p-1">
+                <img src="caramel bread.jpeg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="card-body"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="honey wheat bread.jpeg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="card-body"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="row mb-4 p-4" style="background-color:#562B09;">
+            <div class="col-12 col-lg-3 col-sm-3 col-md-4">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="stick bread.jpeg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="col-body"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="sproute bread.avif" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="col-body"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="banana bread.jpg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="col-body"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="apple bread.jpeg" class="w-100 h-75" alt="">
+                </div>
+                <div class="col">
+                <div class="col-body"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="row mb-4 p-4" style="background-color:#562B09;">
+            <div class="col-12 col-sm-6 col-lg-3 col-md-4">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="chocolate bread.jpg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="card-body"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="oreo bread.jpg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+                <div class="col-body"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="nutella bread.jpeg" class="h-75 w-100" alt="">
+            </div>
+            <div class="col">
+                <div class="col-body"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="h-100 card">
+                <div class="col p-1">
+                <img src="beetroot bread.jpeg" class="w-100 h-75" alt="">
+            </div>
+            <div class="col">
+             <div class="col-body"></div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+    </html>
