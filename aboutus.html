@@ -23,41 +23,75 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
    <header  class="sticky-top" style="background-color: rgb(204, 171, 117); font-family: Georgia, serif;">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col d-flex justify-content-start align-items-center" >
-                <img src="bakerylogob.png" alt="" width="50%" height="50%">
+            <div class="col-4 p-3">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-4 col-lg-2 col-sm-4 col-md-3  d-flex justify-content-center align-items-center" >
+                        <img src="am_logo.png"  alt="am_logo" width="60%" height="0%">
+                    </div>
+                    <!-- <div class="col-3">
+                        <img src="logologo.png"  class="pe-0" alt="logo">
+                    </div> -->
+                </div>
+                <div class="row  d-flex justify-content-start align-items-center">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <b><h1 class="fs-1 " style="color:#562B09;font-weight: bold;">AbleM Bakery</h1></b>
+                    </div>
+                </div>
             </div>
-            <div class="col ps-0 d-flex justify-content-start align-items-center">
-                <b><h1 class="fs-1" style="color:#562B09;">Melbu Bakery</h1></b>
-            </div>
-            <div class="col-3">
-                <img src="logologo.png"  class="pe-0" alt="logo">
+            <div class="col fluid mt-1 d-flex justify-content-end align-items-center">
+                <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: rgb(204, 171, 117);color:#562B09;">
+                    <div class="container">
+                        <!-- <a class="navbar-brand " href="#" id="navlink">Menu</a> -->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#list" type="button"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="list">
+                        <ul class="navbar-nav" style="margin-left: auto;" >
+                            <li class="nav-item"><a class="nav-link" id="navlink" href="website for bakery.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" id="navlink" href="loginpage.html">Login</a></li>
+                            <li class="nav-item"><div class="dropdown" >
+                                <a class="nav-link dropdown-toggle" id="navlink" data-toggle="dropdown" href="#" id="lli" aria-haspopup="true" aria-expanded="false">
+                                Catagory</a>
+                                   <div class="dropdown-menu" aria-labelledby="lli">
+                                    <a class="dropdown-item " href="cake.html">Cake</a>
+                                    <a class="dropdown-item" href="bread.html">Bread</a>
+                                    <a class="dropdown-item" href="pie">Pie</a>
+                                   </div>
+                                </div></li>
+                            <li class="nav-item"><a class="nav-link active" href="#" id="navlink">About us</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
             </div>
         </div>
+       
+        
     </div>
-        <nav class="navbar navbar-dark navbar-expand-lg" style="background-color:#562B09;">
-            <div class="container">
-                <a class="navbar-brand " href="#">Menu</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#list" type="button"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="list">
-                <ul class="navbar-nav" style="margin-left: auto;" >
-                    <li class="nav-item"><a class="nav-link" href="website for bakery.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="loginpage.html">Login</a></li>
-                    <li class="nav-item"><div class="dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="lli" aria-haspopup="true" aria-expanded="false">
-                        Catagory</a>
-                           <div class="dropdown-menu" aria-labelledby="lli">
-                            <a class="dropdown-item " href="cake.html">Cake</a>
-                            <a class="dropdown-item" href="bread.html">Bread</a>
-                            <a class="dropdown-item" href="pie">Pie</a>
-                           </div>
-                        </div></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">About us</a></li>
-                </ul>
-            </div>
-            </div>
-        </nav>
+      
     </header>
+    <div class="d-flex justify-content-center align-items-center vh-100" >
+        <div class="form  border p-5 rounded shadow" style="background-color:rgb(204, 171, 117);color:#562B09">
+            <div class="d-flex justify-content-center align-items-center">
+                <h1 class="pb-2" >Contact us</h1>
+            </div>
+            <div class="form_name">
+                <label for="name" class="form-label">Enter your Name:</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form_email">
+                <label for="email" class="form-label">Enter Your Email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form_comments">
+                <label for="comments" class="form-label">Enter Your Comments:</label>
+                <textarea name="" id="comments" class="form-control" row="3"></textarea>
+            </div class="">
+            <div class="mt-4 d-flex justify-content-end align-items-center">
+                <button type="submit" class="btn" id="contact_submit_button">Submit</button>
+            </div>
+
+        </div>
+    </div>
     </body>
     </html>
